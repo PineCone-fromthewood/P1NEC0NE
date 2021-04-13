@@ -1,0 +1,16 @@
+.tekst1{
+    margin-left: 5rem;
+    padding: 16px;
+    height:1000px;
+
+}
+
+
+.footer {
+    position: fixed;
+    float: left;
+    bottom: 0px;
+     font: 1rem 'Fira Sans', sans-serif;
+     font-size: 10px;
+
+}
