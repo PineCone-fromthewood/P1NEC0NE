@@ -1,0 +1,27 @@
+{
+    "name": "A basic Progressive Web App",
+    "short_name": "Basic PWA",
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ccc",
+    "theme_color": "#5FAAE5",
+    "icons": [
+      {
+        "src": "/src/images/touch/android-chrome-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+
+      {
+        "src": "/src/images/touch/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/src/images/touch/android-chrome-72x72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      }
+    ]
+  }

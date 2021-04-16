@@ -1,0 +1,90 @@
+
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+	font-family: "roboto", sans-serif;
+}
+/*	content: "";
+	display: block;
+	color: #ffffff;
+	width: 100vw;
+	max-height: 20vh;
+	background: 
+    url('../src/images/assets/code.jpg') center no-repeat;
+  background-size: cover;
+
+
+
+ banner video experiment>> <video class="bannervideo" src="./stylessheet/banner.mp4" alt="background" preload="auto"  autoplay="autoplay" muted loop></video>
+}*/
+.topcontainer{
+  background-color: rgb(34, 139, 34); 
+  background-size: auto; 
+	height: 320px;
+  width: 100%;
+	/*background: linear-gradient(
+      rgba(34, 139, 34, 0.9),
+      rgb(34, 140, 34),
+      rgba(15, 175, 105, 0.85)
+    )*/
+}   
+/*
+.bannerimage{
+  background-color: forestgreen; 
+  object-fit: fill;
+  max-height: 20rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(148, 48, 48, 0.2),
+      rgba(167, 67, 67, 0.4)
+    ),
+    url('../images/assets/code.jpg')center no-repeat;
+  background-size: auto;
+
+}*/
+
+.bannervideo{
+  background-color: forestgreen; 
+  object-fit: fill;
+  max-height: 20rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(148, 48, 48, 0.2),
+      rgba(197, 67, 67, 0.4)
+    ),
+    /*url('../img/code.jpg')*/ 
+}
+.container {
+  height: 80em;
+  width: 100%;
+  
+}
+/*
+.container2 {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(148, 48, 48, 0.2),
+      rgba(167, 67, 67, 0.4)
+    ),
+    url('../img/code.jpg') center no-repeat;
+  background-size: cover;
+}*/
+
+/*ctrl c ctrl v  https://github.com/lashaNoz/Hamburger-Menu/commit/9ae47ab5a83167cd6199fdc1ef2bc3f8135a9cd5*/
+
+
+
+.footer {
+    position: fixed;
+    float: left;
+    bottom: 0px;
+     font: 1rem 'Fira Sans', sans-serif;
+     font-size: 10px;
+
+}
