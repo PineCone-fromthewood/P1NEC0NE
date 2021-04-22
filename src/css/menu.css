@@ -1,8 +1,8 @@
 .sidenav {
-  margin-right: auto;
+  /*margin-right: auto;*/
+  float: left;
   width: 23%;
   height: 75vh;
-  
   bottom: 15em;
   background-color: rgba(0,0,0,0.9);
   position: fixed;
@@ -18,7 +18,7 @@
 }
 
 .change {
-  right: 10px;
+  right: 20px;
 }
 
 .hamburger-menu {
