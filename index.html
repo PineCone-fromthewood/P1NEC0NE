@@ -17,128 +17,285 @@
     <link rel="preload" href="./src/css/text.css" as= style>
 	<script src=¨nav.js" type="text=javascript" defer></script>
      
-	<link rel="stylesheet" href="./src/css/style.css">
-	<link rel="stylesheet" href="./src/css/menu.css">
-	<link rel="stylesheet" href="./src/css/text.css">
+	
+	
+
 
 	<!-- ios support -->
 	<link rel="apple-touch-icon" href="/src/images/touch/logo-96x96.ico">
 	<meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
 	<meta name="theme-color" content="#FFE1C4">
-	
 </head>
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.body{
+    overflow: hidden;
+    
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+aside {
+ background-color: #1f291ff3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right:0;
+  width: 20%;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(59, 151, 22);
+  overflow: hidden;
+}
+
+label {
+  color: green;
+  float: right;
+  padding: 10px;
+  right: 20px;
+  background-color:  rgb(40, 87, 47);
+  cursor: pointer;
+  margin: 10px;
+  z-index: 3;
+  position: relative;
+ 
+}
+
+.bar {
+  background-color:rgba(0,255,0,0.9);
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 5px auto ;
+  transition: /*background-color .5s ease-in,*/ transform .3s ease-in, width .5s ease-in;
+}
+
+.content {
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  right: 0;
+  left: 0;
+  width: auto;
+  position: absolute;
+  background-color: rgb(146, 247, 163);
+  z-index: 2;
+  transition: transform .3s ease-in-out;
+  overflow-y:scroll;
+}
+
+.banner{
+  width: clamp(200px, 99%, 100% );
+  height: 20vh;
+  position: relative;
+  top: -1%;
+  right: 0.2%;
+  
+  font-family: Arial;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 40px;
+  text-align: center;
+  background: rgb(40, 87, 47);
+
+}
+
+.contentgrid{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 1fr;
+    overflow-y: auto;
+    
+}
+
+.card {
+   grid-column-start: 1;
+   background-color: white;
+   padding: 10px;
+   margin-top: 20px;
+   margin-left: 5px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 80%;
+  padding: 20px;
+}
+
+
+h1 {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 40px;
+}
+
+.asideList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, .7);
+}
+
+.asideAnchor {
+  border-bottom: 2px solid rgba(255, 255, 255, .7);
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color .3s .15s ease-in;
+}
+
+/*.asideAnchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 0;
+   z-index: -1;
+}*/
+
+.asideAnchor:hover {
+  color: #fff;
+}
+
+.asideAnchor:hover::after {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+/*to change the orientation of the animation */
+input[type="checkbox"]:checked ~ .content {
+  transform: translateX(-20%);
+}
+
+input[type="checkbox"]:checked ~ label .bar {
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked ~ label .top {
+  -webkit-transform: translateY(0px) rotateZ(45deg);
+  -moz-transform: translateY(0px) rotateZ(45deg);
+  -ms-transform: translateY(0px) rotateZ(45deg);
+  -o-transform: translateY(0px) rotateZ(45deg);
+  transform: translateY(0px) rotateZ(45deg);
+}
+
+input[type="checkbox"]:checked ~ label .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+input[type="checkbox"]:checked ~ label .middle {
+  width: 0;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.ua {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  color: #0799d3;
+  font-size: 2em;
+  z-index: 2;
+}
+
+</style>
 <body>
-	<header class="header">		
-	</header>
-
-	<div class="topcontainer"> </div>
-	<div class="bannerimage"> </div>
+  <aside>
+    <ul class="asideList">
+        <li><a href="index.html" class="asideAnchor">Home</a></li>
+        <li><a href="./topics/how_to.html" class="asideAnchor">How to´s</a></li>
+        <li><a href="./topics/library.html" class="asideAnchor">Reading</a></li>
+        <li><a href="./topics/ctf.html" class="asideAnchor">CTF</a></li>
+        <li><a href="./topics/articles/article-index-with-nav.html" class="asideAnchor">Reading</a></li>
+        <li><a href="socialfeed.html" class="asideAnchor">Feed</a></li>
+      </ul>
+  </aside>
+  <section>
+    <input type="checkbox" id="myInput">
+    <label for="myInput">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </label>
 	
-
-<!--sidenav-->
-	<div class="container">
-		<nav class="sidenav">
-			<div  class="hamburger-menu">
-				<div class="line line-1"></div>
-				<div class="line line-2"></div>
-				<div class="line line-3"></div>
-			</div>
-
-			<ul class="snav-list">
-				<li class="snav-item">
-					<a href="index.html" class="snav-link">Home</a>
-				</li>
-				<!--li class="snav-item">
-					<a href="./topics/ctf.html" class="snav-link">CTF</a>
-				</li-->
-				<li class="snav-item">
-					<a href="./topics/how_to.html" class="snav-link">How to´s</a>				
-				</li>
-				<li class="snav-item">
-					<a href="./topics/library.html" class="snav-link">library</a>				
-				</li>
-				<li class="snav-item">
-					<a href="./topics/articles/article-index-with-nav.html" class="snav-link">Articles</a>
-				</li>
-				<!--<li class="snav-item">
-					<a href="articles.html" class="snav-link">articles</a>
-				</li>-->
-				<li class="snav-item">
-					<a href="socialfeed.html" class="snav-link">Social Feed</a>
-				</li>
-				
-			</ul>
-		</nav>
-	</div>
-
-	<!--page content-->
-	<div class="header">
-		<h2>P1NEC0NE</h2>
-	</div>
-
-	<div class="row">
-	<div class="leftcolumn">
-		<div class="card">
-		<h2>TITLE HEADING</h2>
-		<h5>Topic 1 description, date</h5>
-		<div class="fakeimg" style="height:200px;">comming soon</div>
-		<p>Hello kind stranger. I am currently doing my best to get this up and running.
-		<br>
-		Thank you for visiting while I am still building my home. Thanks alot. Look at all the unpacking I need to get done. No, please keep sitting there. 
-		<br>
-		<br>
-		I don´t need the help. <br> Thanks SOOO MUCH
-		</p>
-		</div>
-		<div class="card">
-		<h2>TITLE HEADING</h2>
-		<h5>topic 2 description, date</h5>
-		<div class="fakeimg" style="height:200px;">to a theather near you</div>
-		<p>Some text..</p>
-		<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-		</div>
-		<div class="card">
-		<h2>TITLE HEADING</h2>
-		<h5>topic 3 description, date</h5>
-		<div class="fakeimg" style="height:200px;">Someone Does Something</div>
-		<p>Some text..</p>
-		<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-		</div>
-	</div>
-	<div class="rightcolumn">
-		<div class="card">
-		<h2>About </h2>
-		<div class="fakeimg" style="height:100px;">Image</div>
-		<p>Something about myself. <br>
-			I have no clue of what I am doing.
-		</p>
-		</div>
-		<div class="card">
-		<h3>Post</h3>
-		<div class="fakeimg">random  </div><br>
-		<div class="fakeimg">cool</div><br>
-		<div class="fakeimg">Image</div>
-		</div>
-		<div class="card">
-		<h3>Follow Me</h3>
-		<p>Some text..</p>
-		</div>
-	</div>
-	</div>
-
-
-	<!--scripts-->
-		
-<script src="./src/js/app.js"></script>
-<script src="./src/js/script.js"></script>
-
+    
+    <!--within this div everything moves with it-->
+    <div class="content">
+        <div class="banner">
+            <H1>P1NEC0NE</H1>
+        </div>
+        <div class="contentgrid">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Topic 1 description, date</h5>
+                <div class="fakeimg" style="height:200px;">comming soon</div>
+                <p>Hello kind stranger. I am currently doing my best to get this up and running.
+                <br>
+                Thank you for visiting while I am still building my home. Thanks alot. Look at all the unpacking I need to get done. No, please keep sitting there. 
+                <br>
+                <br>
+                I don´t need the help. <br> Thanks SOOO MUCH
+                </p>
+                </div>
+                <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>topic 2 description, date</h5>
+                <div class="fakeimg" style="height:200px;">to a theather near you</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+                <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>topic 3 description, date</h5>
+                <div class="fakeimg" style="height:200px;">Someone Does Something</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+        </div>
+      <h1>reveal effect</h1>
+    </div>
+  </section>
+</main>
 </body>
-
-<div class="footer">
-	<h2>pls send help</h2>
-</div>
-
-
-
 </html>
 
