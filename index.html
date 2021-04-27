@@ -98,7 +98,7 @@ label {
   background-color: rgb(146, 247, 163);
   z-index: 2;
   transition: transform .3s ease-in-out;
-  overflow-y:scroll;
+  overflow-y:scroll; /*in order to scroll within the div. */
 }
 
 .banner{
@@ -121,7 +121,7 @@ label {
 .contentgrid{
     display: grid;
     grid-template-columns: 70% 25%;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     overflow-y: auto;
     
 }
@@ -138,6 +138,16 @@ label {
   background-color: #aaa;
   width: 80%;
   padding: 20px;
+}
+
+.cardright{
+   grid-column: 2;  
+   background-color:transparent;
+   padding: 10px;
+   margin-top: 20px;
+   margin-left: 5px; 
+   top:0;   
+
 }
 
 
@@ -243,11 +253,11 @@ input[type="checkbox"]:checked ~ label .middle {
   <aside>
     <ul class="asideList">
         <li><a href="index.html" class="asideAnchor">Home</a></li>
-        <li><a href="./topics/how_to.html" class="asideAnchor">How to´s</a></li>
-        <li><a href="./topics/library.html" class="asideAnchor">Reading</a></li>
-        <li><a href="./topics/ctf.html" class="asideAnchor">CTF</a></li>
-        <li><a href="./topics/articles/article-index-with-nav.html" class="asideAnchor">Reading</a></li>
-        <li><a href="socialfeed.html" class="asideAnchor">Feed</a></li>
+        <li><a href="#" class="asideAnchor">How to´s</a></li> <!--"./topics/how_to.html"-->
+        <li><a href="#" class="asideAnchor">Reading</a></li> <!--"./topics/library.html"-->
+        <li><a href="#" class="asideAnchor">CTF</a></li> <!--"./topics/ctf.html"-->
+        <li><a href="#" class="asideAnchor">Reading</a></li> <!--"./topics/articles/article-index-with-nav.html"-->
+        <li><a href="#" class="asideAnchor">Feed</a></li> <!--"socialfeed.html"-->
       </ul>
   </aside>
   <section>
@@ -276,21 +286,27 @@ input[type="checkbox"]:checked ~ label .middle {
                 <br>
                 I don´t need the help. <br> Thanks SOOO MUCH
                 </p>
-                </div>
-                <div class="card">
+            </div>
+            <div class="cardright">
+                <h3>Post</h3>
+                <a class="twitter-timeline" data-width="350" data-height="1000" data-theme="dark" href="https://twitter.com/Pineconeftwood?ref_src=twsrc%5Etfw">Tweets by Pineconeftwood</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+              </div>
+
+            <div class="card">
                 <h2>TITLE HEADING</h2>
                 <h5>topic 2 description, date</h5>
                 <div class="fakeimg" style="height:200px;">to a theather near you</div>
                 <p>Some text..</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                </div>
-                <div class="card">
+            </div>
+            <div class="card">
                 <h2>TITLE HEADING</h2>
                 <h5>topic 3 description, date</h5>
                 <div class="fakeimg" style="height:200px;">Someone Does Something</div>
                 <p>Some text..</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                </div>
+            </div>
+            
         </div>
       <h1>reveal effect</h1>
     </div>
