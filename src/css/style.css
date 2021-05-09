@@ -39,7 +39,7 @@ body{
   color:#fff;
   font-family: sans-serif;
   /*! z-index: 10; */
-  padding: 2%;
+  padding: 1.5%;
   height: 2%;
   
 }
@@ -61,7 +61,6 @@ body{
   position: absolute;
   height: 5%;
   top:0.7%;
-  
   width: 90%;
   padding-left: 90%;
   margin-left: 5%;
@@ -72,7 +71,7 @@ body{
   display: inline-block;
   white-space: nowrap;
   padding-right: 100vw;
-  animation: ticker 5s linear infinite;
+  animation: ticker 20s linear infinite;
   color: white;
   top: 50%;
   position: absolute;
@@ -80,7 +79,6 @@ body{
 
 .ticker-item{
   color: white;
-  
   top: 20%;
   position: fixed;
 }
@@ -382,6 +380,17 @@ body{
   overflow: hidden;
   left: 27%;
   position: absolute;
+  
+}
+	
+.headline{
+  position:fixed;
+  background: #292F33;
+  color:#fff;
+  font-family: sans-serif;
+  /*! z-index: 10; */
+  padding: 2%;
+  height: 2%;
   
 }
   
