@@ -108,9 +108,12 @@ grid-template-areas:
   height: 100%;
   width: 100%;
   top: 21%;
+  
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  overscroll-behavior-y: contain;  /* disable swipe up refresh */ 
+  
   margin-left: 2%;
   margin-right: 2%;
 }
