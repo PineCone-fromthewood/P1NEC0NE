@@ -100,9 +100,9 @@ grid-template-areas:
   gap: 5px;
   grid-auto-rows:20%;
   grid-template-areas:
-    " a a a  b b "
-    " a a a  b b "
-    " a a a  b b ";
+    " a a a b b "
+    " a a a b b "
+    " a a a b b ";
   margin-top: 3%;
   padding: 0;
   height: 100%;
