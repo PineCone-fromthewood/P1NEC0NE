@@ -45,7 +45,7 @@ grid-template-areas:
 .news-area{
   width: ; /*width of the news area */
   overflow: hidden;
-  left: 7.5vw; /*margin left in order to allign with headline*/
+  left: 8vw; /*margin left in order to allign with headline*/
   position: absolute;
   top: 1vh;
   bottom: 1vh;
@@ -381,7 +381,7 @@ grid-template-areas:
   .news-area{
   width: 90vw;
   overflow: hidden;
-  left: 27vw;
+  left: 23vw;
   position: absolute;
   top:0vh;
   height:70vh
