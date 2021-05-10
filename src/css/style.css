@@ -18,8 +18,14 @@ grid-template-areas:
 " c c c  c c "
 " c c c  c c "
 " c c c  c c "
-" f f f  f f";font-family: "roboto", sans-serif;
-  /* blogish*/background: #cae9bc;margin: 0;padding: 0;height: 100%;width: 100%;}
+" f f f  f f";
+font-family: "roboto", "sans-serif";
+  /* blogish*/background: #cae9bc;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+}
 
 
 /*ticker normal*/
@@ -111,8 +117,7 @@ grid-template-areas:
   
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */overscroll-behavior: contain;  /* disable swipe up refresh */ 
-  
+  scrollbar-width: none;  /* Firefox */
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -403,7 +408,7 @@ grid-template-areas:
   
 }
 
-
+/*responsive content*/
 .content{
   grid-area: c;
   position: fixed;
@@ -436,6 +441,7 @@ grid-template-areas:
     grid-area: a;
     width: 70%;
     padding: 0;
+    
    
   }
   .rightcolumn { 
