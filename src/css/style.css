@@ -49,7 +49,8 @@ width: 100%;
 }
 
 .news-area{
-  width: ; /*width of the news area */
+  width: 90vw; /*width of the news area */
+  height:5vh;	
   overflow: hidden;
   left: 8vw; /*margin left in order to allign with headline*/
   position: absolute;
@@ -387,6 +388,7 @@ width: 100%;
 }
   .news-area{
   width: 90vw;
+  height:5vh;
   overflow: hidden;
   left: 23vw;
   position: absolute;
