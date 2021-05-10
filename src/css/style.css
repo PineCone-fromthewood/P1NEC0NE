@@ -112,7 +112,7 @@ grid-template-areas:
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  overscroll-behavior-y: contain;  /* disable swipe up refresh */ 
+  overscroll-behavior: contain;  /* disable swipe up refresh */ 
   
   margin-left: 2%;
   margin-right: 2%;
