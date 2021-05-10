@@ -73,7 +73,7 @@ width: 100%;
   display: inline-block;
   white-space: nowrap;
   padding-right: 13vw;
-  animation: ticker 20s linear infinite;
+  animation: ticker 30s linear infinite;
   color: white;
   top: 50%;
   position: absolute;
@@ -365,14 +365,14 @@ width: 100%;
     left: -2%;
     grid-area: h;
     margin-bottom: 2%;
-    padding-bottom FONT-VARIANT: JIS04;
+    
   }
   
   .ticker-animation{
   display: inline-block;
   white-space: nowrap;
   padding-right: 100vw;
-  animation: ticker 15s linear infinite;
+  animation: ticker 30s linear infinite;
   color: white;
   top: 1%;
   position: absolute;
