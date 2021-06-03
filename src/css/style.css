@@ -627,11 +627,11 @@ body{
   body{
     position: absolute;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr;
     gap: 0;
     grid-auto-rows: 18% 40% 30% 10%;
     grid-template-areas: 
-    " h n" " a c" " b c" " f f";
+    " h " "a" "b" "f";
     
     font-family: "roboto", sans-serif;
     /* blogish*/
@@ -639,10 +639,11 @@ body{
     background: #cae9bc;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     
     overflow-y: scroll;
+    overflow-x:hidden;		  
   }
   
   .hamburger-menu {
@@ -650,9 +651,9 @@ body{
         width: 25px;
     height: 25px;
     position: fixed;
-    top: 5%;
+    top: 8vh;
     bottom: 20px;
-    right: 30px;
+    right: 17vw;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -771,6 +772,7 @@ body{
     left: 1%;
     top: 1%;
     height: 35vh;
+    overflow-x:hidden;
   }
   .rightcolumn { 
     display: grid;
@@ -783,10 +785,11 @@ body{
     position: relative;
     margin:2%;
     max-width: 92vw;
-    top:0%;
+    top:3%;
     
     max-height: 28vh;
     left: 3px;
+    overflow-x:hidden;  	
     }
   
   .card1 {
