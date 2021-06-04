@@ -1,7 +1,7 @@
 
 *{
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
   height: 100%;
   width: 100%;
 }
@@ -14,14 +14,15 @@ body{
   grid-auto-rows:24% 24% 24% 24% 5%;
   grid-template-areas: 
   " h h h n" " a a a b " " a a a b " " a a a b " " f f f f";
-  font-family: "roboto", sans-serif;
+	font-family: "roboto", sans-serif;
   /* blogish*/
   background: #cae9bc;
- margin: 0;
- padding: 0;
+	margin: 0;
+	padding: 0;
   height: 100%;
   width: 100%;
-   
+  
+  
   -webkit-scrollbar\ \{\ display: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -37,6 +38,7 @@ body{
   background-color: #1ef75ea6;
   border: 1px solid black;
   padding: 0 9px 0 8px;
+  z-index: 1;
 }
 
 .title_pine h3{
@@ -58,7 +60,7 @@ left: 6.1%;
 padding: 0 ;
 margin: 5px;
 top:0;
-
+z-index: 1;
 }
 
 /* MIDDLE CONTAINER */
@@ -85,7 +87,7 @@ margin: 0 ;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: ticker;
-  animation-duration: 30s;
+  animation-duration: 20s;
   padding-top: 7px;
 }
 .ticker-move:hover{
@@ -118,17 +120,19 @@ padding: 6px;
   font-size: 3px;
   background: rgba(19, 40, 22, 0.9);
   max-height: 60%;
-  top: 4.9%;
+  top: 0%;
  
   margin: 8px;
   width: 100vw;
 
   position: fixed;
   margin-left: 0;
-  z-index: 4;
+  z-index: 0;
   text-align: start;
-  padding-top: 0px;
+  padding-top: 36px;
   height: 8vw;
+  padding-bottom: 1px;
+  margin-top: 0px;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -666,7 +670,7 @@ padding-right: 100%;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
 animation-name: ticker;
-animation-duration: 20s;
+animation-duration: 15s;
 padding: 2px;
 }
 
