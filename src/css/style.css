@@ -527,39 +527,7 @@ padding: 6px;
     grid-auto-flow: column;
   }
   
-  .hamburger-menu {
-    grid-area: n;
-    width: 25px;
-    height: 25px;
-    position: fixed;
-    top: 5%;
-    bottom: 20px;
-    right: 30%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.sidenav {
-
-    margin-right: auto;
-    float: left;
-    width: 25%;
-    height: 75vh;
-    bottom: 15em;
-    background-color: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 22.5%;
-    bottom: 5%;
-    right: -100%;
-    display: flex;
-    justify-content: center;
-    align-items: inherit;
-        z-index: 7;
-
-}
-
+ 
 .header {
   font-family: Arial;
   color: rgba(0, 255, 0, 0.9);
