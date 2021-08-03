@@ -117,7 +117,7 @@ body{
 @media (min-width: 1000px){
     .page{
         display: grid;
-        grid-template-rows: 170px 1fr 80px;
+        grid-template-rows: 170px 1fr 120px;
         grid-template-areas: 
         "h" 
         "m" 
