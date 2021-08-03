@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Atlantis-Rsmall;
+    src: url('../fonts/Atlantis-RegularSmallCaps.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:Atlantis-Head ;
+    src: url('../fonts/AtlantisHeadline-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Atlantis-Bold;
+    src: url('../fonts/AtlantisText-Bold.ttf');
+    font-weight: bolder;
+    font-style: normal;   
+}
+
+@font-face {
+    font-family: ChessType;
+    src: url('../fonts/FontsFree-Net-ChessType.ttf');
+    font-weight: bolder;
+    font-style: normal;   
+}
+@font-face {
+    font-family: Barcode;
+    src: url('../fonts/FontsFree-Net-BarcodeFont-1.ttf');
+    font-weight: bolder;
+    font-style: normal;   
+}
+@font-face {
+    font-family: Workbench;
+    src: url('../fonts/Workbench.ttf');
+    font-weight: bolder;
+    font-style: normal;   
+}
+@font-face {
+    font-family: sixtyfour;
+    src: url('../fonts/Sixtyfour.ttf');
+    font-weight: bolder;
+    font-style: normal;   
+}
