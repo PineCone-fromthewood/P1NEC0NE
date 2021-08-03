@@ -76,7 +76,26 @@ body{
 
 }
 
-@media only screen and (min-width: 700px){
+@media (min-width: 700px){
+
+    .page{
+        display: grid;
+        grid-template-rows: 120px 1fr 80px;
+        grid-template-areas: 
+        "h" 
+        "m" 
+        "f";
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .subcontent{
+        grid-template-columns: 1fr 1fr ;
+        gap: 5px;
+    }
+} 
+
+@media (min-width: 940px){
 
     .page{
         display: grid;
@@ -92,5 +111,18 @@ body{
     .subcontent{
         grid-template-columns: 1fr 1fr ;
         gap: 5px;
+    }
+} 
+
+@media (min-width: 1000px){
+    .page{
+        display: grid;
+        grid-template-rows: 170px 1fr 80px;
+        grid-template-areas: 
+        "h" 
+        "m" 
+        "f";
+        overflow-x: hidden;
+        height: 100vh;
     }
 }
