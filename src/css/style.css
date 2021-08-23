@@ -55,13 +55,13 @@ body{
 .topics-grid{
     display: grid;
     grid-area: topics;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 120px 1fr;
     /* left: 15px; */
     /* background-color: #353535; */
     background-color: rgb(64, 64, 64);
     /* background-color: rgba(1, 29, 0, 0.747); */
-    -webkit-text-stroke-width: .3px ;
-    -webkit-text-stroke-color:  red;
+    -webkit-text-stroke-width: .4px ;
+    -webkit-text-stroke-color:  black;
     font-family: boldbit-1 !important;
     background-image: url(../images/topic/backgroundtopics.jpg);
     background-size: cover;
@@ -89,7 +89,7 @@ body{
     gap:15px;
     background-color: #1d1160;
     text-align: center;
-    font-size: 1vw;
+    font-size: 2.5vw;
     color: white;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
