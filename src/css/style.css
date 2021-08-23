@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    /* background-color:#58111A; */
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    display: block;
+}
+
+.header{
+    font-family: boldbit-1;
+    font-style: italic;
+    margin: 0px;
+    padding-bottom: 5px;
+    background-color: #1d1160;
+    /* color: rgb(0, 255, 42); */
+    text-decoration: red;
+    text-decoration-line: underline; 
+    text-decoration-thickness: 1px;
+    font-size: 2.5vw;
+    text-align: center;
+    height: 10vh;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color:white;
+    text-transform: uppercase;
+}
+.maincontent{
+    /* background-color: rgb(115, 205, 92); */
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "welcome" "topics";
+    /* background-color: rgb(165, 163, 159); */
+    
+}
+
+.welcome{
+
+    grid-area: welcome;
+    padding:10px;
+    width: 100vw;
+    /* background-color: rgb(231, 231, 231); */
+    /* background-color: rgb(177, 162, 162); */
+    background-color: white;
+   
+}
+
+.topics-grid{
+    display: grid;
+    grid-area: topics;
+    grid-template-rows: 150px 1fr;
+    /* left: 15px; */
+    /* background-color: #353535; */
+    background-color: rgb(64, 64, 64);
+    /* background-color: rgba(1, 29, 0, 0.747); */
+    -webkit-text-stroke-width: .3px ;
+    -webkit-text-stroke-color:  red;
+    font-family: boldbit-1 !important;
+    background-image: url(../images/topic/backgroundtopics.jpg);
+    background-size: cover;
+}
+
+.topic-title{
+    text-align: center;
+    top:50px;
+    position: relative;
+    color: white;
+    -webkit-text-stroke-width: .3px ;
+    ;    -webkit-text-stroke-color:  red;
+
+    /* color: #ffffff; */
+}
+
+
+.footer{
+    font-family: boldbit-1;
+    padding: 7px;
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:15px;
+    background-color: #1d1160;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    /* border-top-style: groove;
+    border-width: 1px;
+    border-top-color: red; */
+}
+
+
+@media (min-width: 1000px) {
+
+    .header{
+        /* font-family: boldbit-1; */
+        font-style: italic;
+        margin: 0px;
+        padding-bottom: 20px;
+        font-size: 2vw;
+        text-align: center;
+        height: 17vh;
+
+    }
+    .maincontent{
+        /* background-color: rgba(178, 226, 166, 0.877); */
+        height: 67vh;
+        display: grid;
+        grid-template-areas: "welcome topics" !important;
+    }
+    
+    .welcome{
+    
+        grid-area: welcome;
+        padding:10px;
+        width: 35vw;
+       
+    }
+    
+    .topics-grid{
+        display: grid;
+        grid-area: topics;
+        grid-template-rows: 100px 1fr;
+        left: 0;
+        width: 65vw;
+        padding: 0;
+        /* background-color: rgba(1, 29, 0, 1); */
+        
+    }
+
+    .topic-title{
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    
+    .footer{
+        /* font-family: Atlantis-Head; */
+        padding: 7px;
+        width: 100vw;
+        height: 16vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:15px;
+        /* background-color: rgba(0, 0, 0, 0.971); */
+        text-align: center;
+        font-size: 1.2vw;
+    }
+    
+}
+
+    
+@media (min-width: 700px) and (max-width: 850px) {
+
+    .header{
+        margin: 0px;
+        padding: 20px;
+        font-size: 3vw;
+        height: 14vh;
+    }
+    .maincontent{
+        height: 76vh;
+        display: grid;
+        grid-template-areas: "welcome" "topics" !important;
+    }
+    
+    .welcome{
+    
+        grid-area: welcome;
+        padding:10px;
+        width: 100vw;
+       
+    }
+    
+    .topics-grid{
+      
+        display: grid;
+        grid-area: topics;
+        
+
+        
+    }
+    
+    
+    .footer{
+        /* font-family: Atlantis-Head; */
+        padding: 7px;
+        width: 100vw;
+        height: 12vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:15px;
+        /* background-color: rgba(0, 0, 0, 0.971); */
+        text-align: center;
+        font-size: 0.8vw;
+    }
+    
+}
+
+
+    
+
+
