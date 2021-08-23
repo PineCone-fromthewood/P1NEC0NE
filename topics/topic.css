@@ -46,7 +46,7 @@
 }
 
 .title {
-  --font-size: calc(var(--size) / 7);
+  --font-size: calc(var(--size) / 6);
   display: flex;
   align-items: center;
   position: absolute;
@@ -59,6 +59,7 @@
   /* transform: translate(-5%, -50%); */
   transition: transform var(--duration) var(--ease-out);
   pointer-events: none;
+  text-shadow: 2px 2px black;
 }
 
 .title::after {
