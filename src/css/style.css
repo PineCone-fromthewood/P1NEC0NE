@@ -55,7 +55,7 @@ body{
 .topics-grid{
     display: grid;
     grid-area: topics;
-    grid-template-rows: 120px 1fr;
+    grid-template-rows: 100px 1fr;
     /* left: 15px; */
     /* background-color: #353535; */
     background-color: rgb(64, 64, 64);
