@@ -58,7 +58,7 @@ body{
     grid-template-rows: 100px 1fr;
     /* left: 15px; */
     /* background-color: #353535; */
-    background-color: rgb(64, 64, 64);
+/*     background-color: rgb(64, 64, 64); */
     /* background-color: rgba(1, 29, 0, 0.747); */
     -webkit-text-stroke-width: .4px ;
     -webkit-text-stroke-color:  black;
