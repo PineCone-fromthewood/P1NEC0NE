@@ -26,8 +26,8 @@
   position: relative;
   width: 100vw;  
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-columns: repeat(4, 1fr);
   place-items: center;
   gap: calc(var(--space) / 2 );
   margin: 0 ;
@@ -41,7 +41,7 @@
 .promo {
   position: relative;
   /* cursor: pointer; */
-  width: calc(var(--size)*2);
+  /* width: calc(var(--size)*2); */
   height: var(--size);
 }
 
@@ -59,6 +59,7 @@
   /* transform: translate(-5%, -50%); */
   transition: transform var(--duration) var(--ease-out);
   pointer-events: none;
+  /* display: none; */
   text-shadow: 2px 2px black;
 }
 
@@ -94,6 +95,7 @@
   transition: transform var(--duration) var(--ease-out);
   opacity: 0.8;
   border-radius: 15px;
+  filter: blur(1.2px);
 }
 
 .image-wrapper::after {
@@ -230,7 +232,7 @@
       
       .image-wrapper::after {
         content: "";
-        position: a;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -341,7 +343,7 @@
     
     .image-wrapper::after {
       content: "";
-      position: a;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
@@ -443,12 +445,12 @@
       object-fit: cover;
       transform: translateX(-10%);
       transition: transform var(--duration) var(--ease-out);
-      /* opacity: 0.8; */
+      opacity: 0.99;
     }
     
     .image-wrapper::after {
       content: "";
-      position: a;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
