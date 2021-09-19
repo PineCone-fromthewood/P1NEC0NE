@@ -1,0 +1,111 @@
+navbar_entries:
+  - title: home
+    url: /
+
+  - title: about
+    url: about
+
+  - title: blog
+    url: blog
+  
+
+
+  # - title: website
+  #   url: https://www.p1nec0ne.com
+
+project_entries:
+  - title: Linux
+    url: overview-linux
+    desc: Getting a grasp  on Linux
+
+  - title: Security
+    url: overview-security
+    desc: The world of Security
+
+  - title: News
+    url: overview-news
+    desc: What is happening?
+
+  - title: Python
+    url: overview-python
+    desc: Getting started with Python
+    # highlight: WIP
+
+  - title: miscellaneous
+    url: overview-miscellaneous
+    desc: Uncategorized content
+    highlight: Cool
+
+  # - title: Project 6
+  #   url: overview-post
+  #   desc: It also has a scalable vertical list (in case you need it)
+
+linux_entries:
+  - title: General
+    url: :/linux/general
+    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+    highlight: NEW
+
+  - title: Shell (BASH)
+    url: /linux/bash
+    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+    highlight: NEW
+
+#   - title: Cookie
+#     url: https://github.com/abhinavs/cookie
+#     desc: An open source landing website with supporting pages and integrated blog
+
+#   - title: Moonwalk
+#     url: https://github.com/abhinavs/moonwalk
+#     desc: A fast and minimalist Jekyll blog theme with clean dark mode
+
+#   - title: Humangous
+#     url: https://www.humangous.co
+#     desc: The better people know you, the better they collaborate
+
+footer_entries:
+  - title: P1NEC0NE.com
+    url: https://www.p1nec0ne.com
+
+  - title: twitter
+    url: https://twitter.com/p1nec0neftwood
+
+  # - title: github
+  #   url: https://github.com/abhinavs
+
+  - title: rss-feed
+    url: feed.xml
+
+# misc_entries:
+#   - title: this is an example vertical list
+#     url: false
+
+#   - title: you can show or hide using a boolean flag in _config.yml
+#     url: false
+
+#   - title: and you can add data in _data/home.yml
+#     url: false
+
+#   - title: Blog posts
+#     post_list: true
+#     url: false
+
+#   - title: moonwalk on the Internet
+#     url: false
+#     entries:
+#       - title: on Github
+#         url: https://github.com/abhinavs/moonwalk
+
+#       - title: originally built for abhinav's homepage
+#         url: https://www.abhinav.co
+
+#       - title: this list is scalable and can be nested
+#         url: false
+#         entries:
+#           - title: this is nested inside a nested list
+#             url: false
+
+#           - title: it is easy to use, see _data/home.yml to see how to configure it.
+#             url: false
+
+

@@ -1,0 +1,13 @@
+<header>
+   
+    <div class="title-nav">
+        <img class="headerimg" src="/images/abstr6.png" alt="P1NEC0NE">
+        <div class="title-navtxt">
+            <h1 style="margin: 5px;">{{ site.title }}</h1>
+            {% if site.theme_config.show_navbar == true %}
+            {% include horizontal_list.html collection=site.data.home.navbar_entries %}
+            {% endif %}
+        </div>  
+    </div> 
+    <div class="dashed"></div>
+</header>

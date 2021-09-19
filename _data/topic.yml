@@ -1,0 +1,42 @@
+linux_entries:
+  - title: General
+    url: linux/general
+    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+    highlight: NEW
+
+  - title: Shell (BASH)
+    url: /linux/bash
+    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+    highlight: NEW
+
+security_entries:
+  - title: General Information
+    url: /security/general
+    desc: Get a broad persepective on security
+    # highlight:
+  - title: Viruses and malware
+    url: /security/virus_malware
+    desc: Learn about viruses and malicious code.
+  
+  - title: Webapplications
+    url: /security/webapp
+    desc: How secure are web applications
+    # /= another level/subdir
+news_entries:
+- title: Newsbytes
+  url: /news/newsbytes
+  desc: Security related news
+
+python_entries:
+- title: General information
+  url: /python/general
+  desc: General and fundamental information 
+- title: Tools
+  url: /python/tools
+  desc: tools you can build with Python
+
+miscellaneous_entries:
+- title: stuff and things
+  url: /miscellaneous/stuff
+  desc: interesting things we stumbled on.
+  

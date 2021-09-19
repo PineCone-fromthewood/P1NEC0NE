@@ -1,0 +1,19 @@
+<footer>
+    <div class="dashed"></div>
+    <div class="foottxt">
+        <div class="flinks">
+            {% include horizontal_list.html collection=site.data.home.footer_entries %}
+        </div>
+
+        <div class="credits">
+            {%- if site.theme_config.show_copyright == true -%}
+            &copy;&nbsp;{{ "now" | date: "%Y" }} | <a>{{site.author}}</a>
+            {% endif %}
+            &nbsp;
+            
+            Theme | <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noreferrer">Moonwalk</a>
+          </div>
+
+    </div>
+  
+</footer>
