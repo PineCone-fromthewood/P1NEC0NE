@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: index
 lastmod: '2021-09-09T14:28:52.639Z'
 ---
 # Welcome
